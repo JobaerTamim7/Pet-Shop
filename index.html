@@ -6,6 +6,23 @@
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <style>
+      @keyframes cursor-animation {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .cursor-animation {
+        animation: cursor-animation 1s infinite;
+      }
+    </style>
+
     <title>Pet Shop</title>
   </head>
   <body>
@@ -35,6 +52,9 @@
             <h2 class="font-adlam text-2xl md:text-4xl lg:text-5xl mb-3">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h2>
             <p class="text-sm md:text-lg md:max-w-[450px] lg:max-w-[600px]">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
             <button class="btn mt-3 font-sora bg-[#FFDC26]">Find a pet</button>
+            <div class="cursor-animation">
+              <i class="fa-classic fa-solid fa-hand-pointer fa-fw text-3xl md:text-5xl"></i>
+            </div>
           </div>
           <div>
             <img src="c1-assets/cat-big.png" class="relative -mt-20 md:mt-[-20vh] lg:mt-[-40vh] -z-10 lg:max-w-[80vw]">
@@ -293,6 +313,42 @@
             <figure class="ml-auto">
               <img src="c1-assets/cute-pet-mid.png" class="size-[80%] md:size-auto" alt="">
             </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-4 md:p-10 lg:p-20 mb-14 ">
+        <h1 class="text-2xl md:text-2xl font-adlam mb-14">Customer Reviews</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 px-6 py-10 gap-10 bg-[#FFF9F4]">
+          <div class="flex justify-start items-center bg-white p-3 space-x-5 rounded-xl">
+            <figure class="p-5 bg-[#FFF9F4] rounded-[50%]">
+              <i class="fa-classic fa-solid fa-user fa-fw text-3xl"></i>
+            </figure>
+            <div>
+              <p class="font-sora font-[700]">MD. Rukan</p>
+              <p class="font-sora font-thin">I love my pet cat. The service quality is also pretty !
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-start items-center bg-white p-3 space-x-5 rounded-xl">
+            <figure class="p-5 bg-[#FFF9F4] rounded-[50%]">
+              <i class="fa-classic fa-solid fa-user fa-fw text-3xl"></i>
+            </figure>
+            <div>
+              <p class="font-sora font-[700]">MD. Rukan</p>
+              <p class="font-sora font-thin">I love my pet cat. The service quality is also pretty !
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-start items-center bg-white p-3 space-x-5 rounded-xl">
+            <figure class="p-5 bg-[#FFF9F4] rounded-[50%]">
+              <i class="fa-classic fa-solid fa-user fa-fw text-3xl"></i>
+            </figure>
+            <div>
+              <p class="font-sora font-[700]">MD. Rukan</p>
+              <p class="font-sora font-thin">I love my pet cat. The service quality is also pretty !
+              </p>
+            </div>
           </div>
         </div>
       </section>
